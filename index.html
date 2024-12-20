@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2 Emissions Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Logo -->
+    <div id="logo">
+        <img src="CO2-image.png" alt="CO2 Logo" style="width: 200px; height: auto;">
+    </div>
+
+    <main>
+        <!-- Home -->
+        <section id="home">
+            <h1>Willkommen auf der CO2-Tracker-Seite</h1>
+            <p>Hier kannst du CO2-Emissionen nach Ländern und Unternehmen analysieren.</p>
+            
+            <!-- Filter-Optionen -->
+            <label for="filter-country">Filter nach Land:</label>
+<select id="filter-country">
+    <option value="">Alle Länder</option>
+    <option value="Deutschland">Deutschland</option>
+    <option value="USA">USA</option>
+    <option value="China">China</option>
+</select>
+
+
+<label for="filter-company">Filter nach Unternehmen:</label>
+<select id="filter-company">
+    <option value="">Alle Unternehmen</option>
+
+    <!-- Deutschland -->
+    <option value="RWE">RWE</option>
+    <option value="Volkswagen AG">Volkswagen AG</option>
+    <option value="BASF">BASF</option>
+    <option value="Daimler (Mercedes-Benz)">Daimler (Mercedes-Benz)</option>
+    <option value="E.ON">E.ON</option>
+
+    <!-- USA -->
+    <option value="ExxonMobil">ExxonMobil</option>
+    <option value="Chevron">Chevron</option>
+    <option value="General Electric (GE)">General Electric (GE)</option>
+    <option value="Ford Motor Company">Ford Motor Company</option>
+    <option value="American Airlines">American Airlines</option>
+
+    <!-- China -->
+    <option value="China Energy Investment">China Energy Investment</option>
+    <option value="PetroChina">PetroChina</option>
+    <option value="China National Petroleum Corporation">China National Petroleum Corporation</option>
+    <option value="Sinopec">Sinopec</option>
+    <option value="State Grid Corporation">State Grid Corporation</option>
+</select>
+
+
+            <button id="sort-btn">Sortieren nach CO2-Emissionen</button>
+
+            <!-- Tabelle -->
+            <table id="co2-table">
+                <thead>
+                    <tr>
+                        <th>Land</th>
+                        <th>Unternehmen</th>
+                        <th>CO2 Emissionen (kg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Deutschland -->
+                    <tr><td>Deutschland</td><td>RWE</td><td>200</td></tr>
+                    <tr><td>Deutschland</td><td>Volkswagen AG</td><td>180</td></tr>
+                    <tr><td>Deutschland</td><td>BASF</td><td>160</td></tr>
+                    <tr><td>Deutschland</td><td>Daimler (Mercedes-Benz)</td><td>140</td></tr>
+                    <tr><td>Deutschland</td><td>E.ON</td><td>120</td></tr>
+                
+                    <!-- USA -->
+                    <tr><td>USA</td><td>ExxonMobil</td><td>400</td></tr>
+                    <tr><td>USA</td><td>Chevron</td><td>350</td></tr>
+                    <tr><td>USA</td><td>General Electric (GE)</td><td>300</td></tr>
+                    <tr><td>USA</td><td>Ford Motor Company</td><td>280</td></tr>
+                    <tr><td>USA</td><td>American Airlines</td><td>260</td></tr>
+                
+                    <!-- China -->
+                    <tr><td>China</td><td>China Energy Investment</td><td>500</td></tr>
+                    <tr><td>China</td><td>PetroChina</td><td>450</td></tr>
+                    <tr><td>China</td><td>China National Petroleum Corporation</td><td>420</td></tr>
+                    <tr><td>China</td><td>Sinopec</td><td>400</td></tr>
+                    <tr><td>China</td><td>State Grid Corporation</td><td>380</td></tr>
+                </tbody>                
+            </table>
+        </section>
+
+        <!-- Über uns -->
+        <section id="about" style="display: none;">
+            <h1>Über uns</h1>
+            <p>Wir sind eine Non-Profit-Organisation, die Transparenz in CO2-Emissionen schafft.</p>
+        </section>
+
+        <!-- Kontakt -->
+        <section id="contact" style="display: none;">
+            <h1>Kontakt</h1>
+            <p>Schreib uns gerne: info@co2tracker.org</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Rechtliches</h4>
+                <ul>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Kontakt</h4>
+                <p>Email: info@co2tracker.org</p>
+                <p>Telefon: +49 123 456789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CO2 Emissions Tracker | Alle Rechte vorbehalten</p>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

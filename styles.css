@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mindestens die volle Höhe des Viewports */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1; /* Füllt den verfügbaren Platz zwischen Header und Footer */
+    text-align: center;
+    padding: 1rem;
+}
+
+label {
+    margin-right: 1rem;
+}
+
+select, button {
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: auto; /* Schiebt den Footer nach unten */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-section {
+    margin: 0.5rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    border-bottom: 1px solid #555;
+    padding-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
+
+
+#logo {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
