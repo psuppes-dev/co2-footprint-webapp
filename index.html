@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CO2 Emissions Tracker</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -23,6 +24,14 @@
     </div>
 
     <main>
+        <aside id="local-menu">
+            <ul>
+                <li><a href="impressum.html">📄 Impressum</a></li>
+                <li><a href="datenschutz.html">🔒 Datenschutz</a></li>
+            </ul>
+        </aside>
+        
+        <button id="toggle-direction">Umschalten: RTL/LTR</button>
         <!-- Home -->
         <section id="home">
             <h1>Willkommen auf der CO2-Tracker-Seite</h1>
@@ -65,7 +74,13 @@
 </select>
 
 
-            <button id="sort-btn">Sortieren nach CO2-Emissionen</button>
+<label for="sort-order">Sortieren nach CO2-Emissionen:</label>
+<select id="sort-order">
+    <option value="asc">Aufsteigend</option>
+    <option value="desc">Absteigend</option>
+</select>
+
+
 
             <!-- Tabelle -->
             <table id="co2-table">
