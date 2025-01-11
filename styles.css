@@ -8,14 +8,6 @@ body {
     flex-direction: column;
 }
 
-/* Speziell für mobile Geräte */
-@media screen and (max-width: 768px) {
-    body {
-        background-attachment: scroll; /* Ändert von fixed auf scroll für mobile Browser */
-        background-position: center top; /* Passt die Position auf kleineren Bildschirmen an */
-    }
-}
-
 header {
     background-color: #333;
     color: white;
@@ -192,17 +184,40 @@ html, body {
 
 #local-menu a {
     text-decoration: none;
-    color: #333;
+    color: white;
     display: block;
     padding: 0.5rem;
     font-weight: bold;
 }
 
 #local-menu a:hover {
-    background-color: #2ecc71;
-    color: white;
+    background-color: #279455;
 }
 
 .datenschutz-page {
     background: none; /* Entfernt den Hintergrund */
+}
+
+#toggle-direction {
+    position: absolute;
+    top: 2.2rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-direction:hover {
+    background-color: #27ae60;
+}
+
+#local-menu h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem; /* Abstand nach unten zum Menüinhalt */
+    text-align: center; /* Überschrift zentrieren */
 }
