@@ -1,11 +1,19 @@
 body {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
-                url('co2background.jpg') no-repeat center center;
+                url('co2background.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
+}
+
+/* Speziell für mobile Geräte */
+@media screen and (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Ändert von fixed auf scroll für mobile Browser */
+        background-position: center top; /* Passt die Position auf kleineren Bildschirmen an */
+    }
 }
 
 header {
@@ -193,4 +201,8 @@ html, body {
 #local-menu a:hover {
     background-color: #2ecc71;
     color: white;
+}
+
+.datenschutz-page {
+    background: none; /* Entfernt den Hintergrund */
 }
