@@ -1,7 +1,7 @@
 body {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
                 url('co2background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-size: 100% auto;
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
@@ -165,7 +165,7 @@ html, body {
 
 
 #local-menu {
-    background-color: #ffffff;
+    background-color: #2ecc71;
     border: 1px solid #ddd;
     padding: 1rem;
     margin: 1rem;
