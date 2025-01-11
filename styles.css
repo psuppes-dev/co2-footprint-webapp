@@ -2,7 +2,6 @@ body {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
                 url('co2background.jpg') no-repeat center center;
     background-size: cover;
-    background-attachment: scroll;
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
