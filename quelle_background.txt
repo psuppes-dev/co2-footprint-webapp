@@ -1,0 +1,19 @@
+ICON Quelle: https://www.flaticon.com/search?word=contact
+about-icon: https://www.flaticon.com/free-icon/team_11707959?term=about+us&page=1&position=7&origin=search&related_id=11707959
+home-icon: https://www.flaticon.com/free-icon/green-house_5522776?term=home+green&page=1&position=31&origin=search&related_id=5522776
+contact-icon: https://www.flaticon.com/free-icon/email_10286630?term=contact&page=1&position=10&origin=search&related_id=10286630
+
+
+
+
+https://www.w3schools.com/howto/howto_js_dropdown.asp
+
+
+
+https://stackoverflow.com/questions/20116534/how-to-set-proper-element-css-direction-ltr-rtl-according-to-its-inner-text
+
+
+
+
+
+https://www.freepik.com/free-photo/view-green-forest-trees-with-co2_31481258.htm#fromView=search&page=1&position=3&uuid=cbfdda31-b11e-4935-8358-dcc37dcac266

@@ -188,3 +188,85 @@ html, body {
         background: none; /* Entfernt das Hintergrundbild */
     }
 }
+
+/* Sidebar Styling */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px; /* Standard: Sidebar startet links außerhalb des sichtbaren Bereichs */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease; /* Animiertes Ein-/Ausblenden und Positionswechsel */
+    z-index: 1000;
+}
+
+#sidebar.open {
+    left: 0; /* Standard: Sidebar gleitet von links herein */
+}
+
+#sidebar #close-sidebar {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Standard: "X" rechts in der Sidebar */
+    transition: all 0.3s ease; /* Animierte Positionsänderung */
+}
+
+#open-sidebar {
+    position: fixed;
+    top: 10px;
+    left: 10px; /* Standard: Burger-Button links */
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s ease; /* Animierte Positionsänderung */
+}
+
+/* Links in der Sidebar */
+#sidebar a {
+    color: white; /* Macht die Links immer weiß */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+#sidebar a:visited {
+    color: white; /* Verhindert, dass besuchte Links lila erscheinen */
+}
+
+#sidebar a:hover {
+    color: #2ecc71; /* Optional: Farbe beim Hover ändern */
+}
+
+/* RTL-Ausrichtung */
+body.rtl-direction #sidebar {
+    right: -280px; /* Sidebar startet rechts außerhalb des sichtbaren Bereichs */
+    left: auto; /* Sicherstellen, dass die linke Seite nicht beeinflusst wird */
+}
+
+body.rtl-direction #sidebar.open {
+    right: 0; /* Sidebar gleitet von rechts herein */
+    left: auto;
+}
+
+body.rtl-direction #sidebar #close-sidebar {
+    left: 10px; /* "X" links in der Sidebar */
+    right: auto;
+}
+
+body.rtl-direction #open-sidebar {
+    right: 10px; /* Burger-Button rechts */
+    left: auto;
+}
+

@@ -6,6 +6,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll("nav ul li a");
     const sections = document.querySelectorAll("main section");
 
+    // Sidebar-Elemente
+    const sidebar = document.getElementById("sidebar");
+    const openSidebar = document.getElementById("open-sidebar");
+    const closeSidebar = document.getElementById("close-sidebar");
+
+    // Sidebar öffnen
+    openSidebar.addEventListener("click", () => {
+        sidebar.classList.add("open");
+    });
+
+    // Sidebar schließen
+    closeSidebar.addEventListener("click", () => {
+        sidebar.classList.remove("open");
+    });
+
     // Funktion zum Filtern der Tabelle
     function filterTable() {
         const countryFilter = filterCountry.value.toLowerCase();
