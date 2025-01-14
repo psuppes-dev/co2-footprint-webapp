@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     filterTable(); // Initiales Filtern
 
 
-    $('button').click(function(){
+    $('#toggle-direction').click(function() {
         $('body').toggleClass(function(){
            return $(this).is('.rtl-direction, .ltr-direction') ? 'rtl-direction ltr-direction' : 'rtl-direction';
        })
