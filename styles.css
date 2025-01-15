@@ -270,3 +270,32 @@ body.rtl-direction #open-sidebar {
     left: auto;
 }
 
+h1 {
+    font-size: 2.5rem; /* Schriftgröße noch größer */
+    font-weight: bold; /* Fett bleibt fett */
+    color: #000000; /* Optional: Schriftfarbe */
+    text-align: center; /* Optional: Zentrierung */
+}
+
+
+/* Header nur auf Desktop anzeigen */
+header {
+    display: block; /* Standardmäßig sichtbar */
+}
+
+@media (max-width: 1024px) {
+    header {
+        display: none; /* Versteckt den Header auf Tablets und Mobile */
+    }
+}
+
+/* Menü nur auf Mobile und Tablets anzeigen */
+#open-sidebar, #sidebar {
+    display: none; /* Standardmäßig versteckt */
+}
+
+@media (max-width: 1024px) {
+    #open-sidebar, #sidebar {
+        display: block; /* Zeigt das Menü auf Tablets und Mobile */
+    }
+}
